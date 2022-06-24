@@ -1,8 +1,10 @@
-# Auth. In the .env file, copy and paste this into the setting GIT_API_KEY
+# Auth. In order for the site to work, you need to generate a personal token at github.
 
-# This expires on Monday June 27, 2022
+# When you have it, place it in the .env file, in the setting GIT_API_KEY
 
-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
+# Follow this document to generate the personal token
+
+https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
 # GitHub Commits
 
