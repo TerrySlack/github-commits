@@ -1,0 +1,1 @@
+export { TFoot } from "./TableFooter";

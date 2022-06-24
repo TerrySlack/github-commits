@@ -1,0 +1,89 @@
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 2em;
+}
+.not-found-form {
+  height: 35%;
+}
+.not-found-form > * {
+  padding: 1em;
+}
+.not-found-common {
+  color: #fff;
+  background-color: #b22222;
+}
+.not-found-header {
+  font-size: large;
+  font-weight: bold;
+}
+.not-found-message {
+  color: #fff;
+  background-color: #b22222;
+  font-size: medium;
+  font-weight: 600;
+}
+.not-found-owner-repo-container {
+  display: flex;
+  justify-content: center;
+}
+.not-found-owner-repo-message {
+  font-size: medium;
+  font-weight: 500;
+}
+.not-found-owner-repo {
+  text-transform: uppercase;
+  font-size: medium;
+  font-weight: 800;
+  padding: 0.5em;
+}
+
+.not-found-try-again-container {
+  display: flex;
+  justify-content: center;
+}
+.not-found-try-again-container > * {
+  margin: 1em;
+}
+.not-found-try-again-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: medium;
+  font-weight: 600;
+}
+
+.not-found-try-again-button {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 0.375rem;
+  text-align: center;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  background-color: #5f9ea0;
+  color: #fff;
+  cursor: pointer;
+  border: solid 2px silver;
+}
+
+.not-found-try-again-disabled {
+  color: #fff;
+  pointer-events: none;
+  background-color: silver;
+  border: solid 2px silver;
+  opacity: 0.5;
+}
+
+.not-found-try-again-button:hover {
+  background-color: #5f9ea0;
+  border-color: #fafad2;
+  color: #fafad2;
+}

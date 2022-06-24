@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Component matches snapshot 1`] = `
+<body>
+  <div>
+    <div
+      data-testid="home"
+    >
+      <div>
+        <div>
+          <h1
+            data-testid="home-welcome"
+          >
+            Welcome to the Git Hub commits review app
+          </h1>
+        </div>
+        <div>
+          <form
+            data-testid="home-form"
+          >
+            <input
+              data-testid="owner"
+              name="owner"
+              placeholder="Enter the repository owner"
+              type="text"
+            />
+            <input
+              data-testid="repo"
+              name="repo"
+              placeholder="Enter the repository name"
+              type="text"
+            />
+            <button
+              class="data-test-button undefined undefined"
+              data-testid="search"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;
+
+exports[`Home Container matches snapshot 1`] = `
+<body>
+  <div>
+    <div
+      data-testid="home"
+    >
+      <div>
+        <div>
+          <h1
+            data-testid="home-welcome"
+          >
+            Welcome to the Git Hub commits review app
+          </h1>
+        </div>
+        <div>
+          <form
+            data-testid="home-form"
+          >
+            <input
+              data-testid="owner"
+              name="owner"
+              placeholder="Enter the repository owner"
+              type="text"
+            />
+            <input
+              data-testid="repo"
+              name="repo"
+              placeholder="Enter the repository name"
+              type="text"
+            />
+            <button
+              class="data-test-button undefined undefined"
+              data-testid="search"
+              type="submit"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+`;

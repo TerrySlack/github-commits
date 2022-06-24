@@ -1,0 +1,217 @@
+.commits-container {
+  width: 100%;
+  padding: 2em;
+}
+
+.commits-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.commits-column {
+  text-align: left;
+  padding: 1em;
+  font-weight: 600;
+}
+.commits-content {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+}
+.commits-header-section-container {
+  min-width: 1200px;
+  text-align: left;
+}
+.commits-header {
+  position: sticky;
+  top: 0;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+  color: MediumPurple;
+  display: flex;
+  justify-content: flex-start;
+  z-index: 10000;
+  background-color: #000;
+}
+.commits-header-results {
+  padding-right: 0.3em;
+  padding-bottom: 3em;
+  font-weight: bold;
+  font-size: medium;
+}
+.commits-header-title {
+  font-weight: bold;
+  font-size: larger;
+  padding-bottom: 1em;
+}
+.commits-footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 10000;
+}
+.commits-footer > * {
+  margin: 0.1em;
+}
+.commits-message {
+  max-width: 800px;
+  word-wrap: normal;
+}
+.commits-name {
+  max-width: 150px;
+}
+
+.commits-table > tbody > tr:nth-child(even) {
+  color: #fff;
+}
+.commits-table > tbody > tr:nth-child(even) > td {
+  background-color: #b22222;
+  border: solid 5px white;
+}
+.commits-table > tbody > tr:nth-child(odd) > td:first-child,
+.commits-table > tbody > tr:nth-child(even) > td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.commits-table > tbody > tr:nth-child(odd) > td:last-child,
+.commits-table > tbody > tr:nth-child(even) > td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.commits-table-anchor {
+  text-decoration: none;
+}
+.commits-table > tbody > tr:nth-child(odd) > td {
+  background-color: DarkSlateGray;
+  border: solid 5px white;
+}
+.commits-table > tbody > tr:nth-child(even) > td > a {
+  color: #fff;
+}
+.commits-table > tbody > tr:nth-child(odd) > td > a {
+  color: #fff;
+}
+.commits-thead-th {
+  padding: 2em;
+}
+
+/* Responsive table */
+
+/*
+	Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 1199px and also iPads specifically.
+	*/
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1199px) {
+  .commits-header-section-container {
+    min-width: unset;
+    text-align: left;
+  }
+  .commits-message {
+    max-width: 760px;
+    word-wrap: normal;
+  }
+  .commits-name {
+    max-width: 760px;
+  }
+  .commits-date {
+    width: unset;
+  }
+
+  .commits-table > tbody > tr > td {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: solid 1px #fff !important;
+  }
+
+  .commits-table > tbody > tr:nth-child(odd) > td {
+    border: unset;
+  }
+
+  /* Force table to not be like tables anymore */
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    margin: 0 0 1rem 0;
+  }
+
+  td {
+    /* Behave  like a "row" */
+    /* border: none; */
+    /* border-bottom: 1px solid #eee; */
+    position: relative;
+    padding-left: 50%;
+    padding-top: 2em;
+  }
+
+  td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+
+    white-space: nowrap;
+  }
+
+  td:nth-of-type(1):before {
+    content: "Date Committed";
+  }
+  td:nth-of-type(2):before {
+    content: "Author";
+  }
+  td:nth-of-type(3):before {
+    content: "Message";
+  }
+}
+
+.commits-button {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 0.375rem;
+  text-align: center;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.commits-load-more {
+  background-color: #5f9ea0;
+  color: #fff;
+  cursor: pointer;
+  border: solid 2px silver;
+}
+.commits-button-disabled {
+  color: #fff;
+  pointer-events: none;
+  background-color: silver;
+  border: solid 2px silver;
+  opacity: 0.5;
+}
+
+.commits-load-more:hover {
+  background-color: #5f9ea0;
+  border-color: #fafad2;
+  color: #fafad2;
+}

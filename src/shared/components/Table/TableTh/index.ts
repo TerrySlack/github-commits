@@ -1,0 +1,1 @@
+export { TH } from "./TableTh";
